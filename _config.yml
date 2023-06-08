@@ -13,12 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
+title: Crisa97
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Explora el mundo del Hacking Ético y los WriteUps en nuestro blog especializado. Aprende técnicas y herramientas de seguridad informática, descubre vulnerabilidades y soluciones prácticas. Únete a nuestra comunidad y mejora tus habilidades en ciberseguridad hoy mismo.
 twitter_username: username
 github_username: username
 minimal_mistakes_skin: default
@@ -29,18 +27,13 @@ markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 10 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Bogota
 
 include:
   - _pages
-dark_mode:
-    always:            false
-    dynamic:           true
-    sunrise:           6
-    sunset:            18
-    icon:              true
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -63,9 +56,9 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
+  name   : "Ethical Hacker / Red Team / Pentester"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Explora el mundo del Hacking Ético y los WriteUps en nuestro blog especializado. Aprende técnicas y herramientas de seguridad informática, descubre vulnerabilidades y soluciones prácticas. Únete a nuestra comunidad y mejora tus habilidades en ciberseguridad hoy mismo."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
