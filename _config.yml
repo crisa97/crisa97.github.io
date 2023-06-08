@@ -60,7 +60,7 @@ author:
   avatar : "https://avatars.githubusercontent.com/crisa97"
   bio    : "Explora el mundo del Hacking Ético y los WriteUps en nuestro blog especializado. Aprende técnicas y herramientas de seguridad informática, descubre vulnerabilidades y soluciones prácticas. Únete a nuestra comunidad y mejora tus habilidades en ciberseguridad hoy mismo."
   links:
-    - label: "TryHackMe"
+    - label: "Linkedin"
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/crisa97"
     - label: "Twitter"
