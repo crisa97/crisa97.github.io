@@ -57,21 +57,21 @@ plugins:
 
 author:
   name   : "Ethical Hacker / Red Team / Pentester"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "https://avatars.githubusercontent.com/crisa97"
   bio    : "Explora el mundo del Hacking Ético y los WriteUps en nuestro blog especializado. Aprende técnicas y herramientas de seguridad informática, descubre vulnerabilidades y soluciones prácticas. Únete a nuestra comunidad y mejora tus habilidades en ciberseguridad hoy mismo."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
+    - label: "TryHackMe"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/crisa97"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/crisa97hacking"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/crisa97"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://instagram.com/crisa.97"
 
 footer:
   links:
