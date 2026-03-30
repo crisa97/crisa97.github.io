@@ -71,6 +71,6 @@ dork-tool/
 
 ## 🌐 Demo
 
-Puedes probar la herramienta en línea aquí: [Dork Tool en GitHub Pages](https://crisa97.github.io/dork-tool/) <!-- Reemplaza con el enlace real de tu proyecto -->
+Puedes probar la herramienta en línea aquí: [Dork Tool en GitHub Pages](https://crisa97.github.io/) <!-- Reemplaza con el enlace real de tu proyecto -->
 
 
