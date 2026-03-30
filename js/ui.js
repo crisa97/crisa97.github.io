@@ -233,6 +233,26 @@ function clearOSINT() {
     render();
 }
 
+function clearAll() {
+    // Limpiar inputs
+    document.getElementById("domain").value = "";
+    document.getElementById("filter").value = "";
+
+    // Limpiar resultados
+    resultsDiv.innerHTML = "";
+
+    // Restablecer la pestaña activa a "Dorks"
+    currentTab = "dorks";
+    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+    document.querySelector(".tab[onclick*='dorks']").classList.add("active");
+
+    // Limpiar estado de OSINT
+    clearOSINT();
+
+    // Mostrar mensaje de confirmación
+    showToast("✅ Everything cleared!");
+}
+
 window.showTab = showTab;
 window.render = render;
 window.search = search;
@@ -242,3 +262,4 @@ window.copyResult = copyResult;
 window.saveState = saveState;
 window.loadState = loadState;
 window.clearOSINT = clearOSINT;
+window.clearAll = clearAll;
