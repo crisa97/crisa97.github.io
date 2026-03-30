@@ -26,6 +26,7 @@ function render() {
     const dorks = getDorks();
 
     const domain = document.getElementById("domain").value;
+    toggleUI(domain);
     const filter = filterInput.value.toLowerCase();
 
     resultsDiv.innerHTML = "";
@@ -33,7 +34,16 @@ function render() {
     if (currentTab === "dorks") {
 
         if (!domain) {
-            resultsDiv.innerHTML = "<h2>⚠️ To use the tool, you must enter a domain</h2>";
+            resultsDiv.innerHTML = `
+                <div class="alert-box">
+                    <span class="alert-icon">⚠️</span>
+                    <span class="alert-text">To use the tool, you must enter a domain</span>
+                </div>
+                <div class="alert-box">
+                    <span class="alert-icon">⚠️</span>
+                    <span class="alert-text">This platform is intended for educational and professional use 😊</span>
+                </div>
+            `;
             return;
         }
 
@@ -253,6 +263,32 @@ function clearAll() {
     showToast("✅ Everything cleared!");
 }
 
+function toggleUI(domain) {
+    const filter = document.getElementById("filter");
+    const actions = document.querySelector(".actions");
+
+    if (!domain) {
+        filter.classList.add("hidden-ui");
+        actions.classList.add("hidden-ui");
+    } else {
+        filter.classList.remove("hidden-ui");
+        actions.classList.remove("hidden-ui");
+    }
+}
+
+window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+
+    // ⏳ tiempo mínimo visible (ej: 800ms - 1500ms)
+    setTimeout(() => {
+        loader.style.opacity = "0";
+
+        setTimeout(() => {
+            loader.style.display = "none";
+        }, 300);
+
+    }, 1000); // 👈 cambia este valor (1000 = 1 segundo)
+});
 window.showTab = showTab;
 window.render = render;
 window.search = search;
@@ -263,3 +299,4 @@ window.saveState = saveState;
 window.loadState = loadState;
 window.clearOSINT = clearOSINT;
 window.clearAll = clearAll;
+window.toggleUI = toggleUI;

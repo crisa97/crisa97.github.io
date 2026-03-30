@@ -10,6 +10,10 @@
 </head>
 
 <body>
+    <div id="loader">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
     <h1>☠️ Dork Tool And More ☠️</h1>
     <div id="toast"></div>
     <div class="container">
@@ -18,23 +22,25 @@
             <div class="tab active" onclick="showTab('dorks', event)">Dorks</div>
             <div class="tab" onclick="showTab('osint', event)">OSINT</div>
             <div class="tab" onclick="showTab('code', event)"> CODE</div>
-            <div class="tab" onclick="clearAll()"> Clear</div>
         </div>
 
         <div class="container">
             <input type="text" id="domain" placeholder="test.com">
             <input type="text" id="filter" placeholder="filtrar...">
-
+            <div class="actions">
+                <button id="clearBtn" onclick="clearAll()">Clear 🚀</button>
+            </div>
             <div id="results"></div>
         </div>
 
         <script src="js/code.js""></script>
-        <script src="js/dorks.js"></script>
+        <script src=" js/dorks.js"></script>
         <script src="js/osint.js"></script>
         <script src="js/ui.js"></script>
 
         <script>
             document.addEventListener('DOMContentLoaded', () => {
+                toggleUI("");
                 render();
             });          
         </script>
